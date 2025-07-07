@@ -118,28 +118,39 @@
       </section>
       <!-- content -->
       <div class="sub-main-w3">
-         <form class="login" action="mail.php" method="post">
-            <p class="legend">Enquire Now <span class="fa fa-hand-o-down"></span></p>
-            <!-- Name -->
-            <div class="input">
-               <input type="text" placeholder="Name" name="name" required />
-               <span class="fa fa-user"></span>
-            </div>
-            <!-- Email -->
-            <div class="input">
-               <input type="email" placeholder="Email" name="email" required />
-               <span class="fa fa-envelope"></span>
-            </div>
-            <!-- Phone -->
-            <div class="input">
-               <input type="tel" placeholder="Phone Number" name="phone" required pattern="[0-9]{10}" />
-               <span class="fa fa-phone"></span>
-            </div>
-            <!-- Submit -->
-            <button type="submit" class="submit">
-            <span class="fa fa-paper-plane"></span>
-            </button>
-         </form>
+ <form class="login" action="https://formspree.io/f/xyzjarvl" method="POST">
+   <p class="legend">Enquire Now <span class="fa fa-hand-o-down"></span></p>
+   
+   <!-- Name -->
+   <div class="input">
+      <input type="text" placeholder="Name" name="name" required />
+      <span class="fa fa-user"></span>
+   </div>
+   
+   <!-- Email -->
+   <div class="input">
+      <input type="email" placeholder="Email" name="email" required />
+      <span class="fa fa-envelope"></span>
+   </div>
+   
+   <!-- Phone -->
+   <div class="input">
+      <input type="tel" placeholder="Phone Number" name="phone" required pattern="[0-9]{10}" />
+      <span class="fa fa-phone"></span>
+   </div>
+
+   <!-- Spam protection honeypot -->
+   <input type="text" name="_gotcha" style="display:none">
+   
+   <!-- Redirect after submission (optional) -->
+   <input type="hidden" name="_redirect" value="https://futurenowahead.github.io/thank-you.html">
+
+   <!-- Submit -->
+   <button type="submit" class="submit">
+      <span class="fa fa-paper-plane"></span>
+   </button>
+</form>
+
       </div>
       <!-- //content -->
       <!-- copyright -->
