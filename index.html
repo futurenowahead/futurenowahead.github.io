@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang="zxx">
+   <head>
+      <title>Future Now Ahead</title>
+      <!-- Meta tag Keywords -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8" />
+      <meta name="keywords" content="" />
+      <script>
+         addEventListener("load", function () {
+         	setTimeout(hideURLbar, 0);
+         }, false);
+         
+         function hideURLbar() {
+         	window.scrollTo(0, 1);
+         }
+      </script>
+      <!-- Meta tag Keywords -->
+      <!-- css files -->
+      <link href="css/style1.css" rel='stylesheet' type='text/css' media="all">
+      <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+      <!-- Style-CSS -->
+      <link href="css/font-awesome.min.css" rel="stylesheet">
+      <!-- Font-Awesome-Icons-CSS -->
+      <!-- //css files -->
+      <!-- web-fonts -->
+      <link href="//fonts.googleapis.com/css?family=Tangerine:400,700" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+      <!-- //web-fonts -->
+      <style>
+         h1{
+         font-size:3.5rem;
+         }
+         .card:hover {
+         transform: translateY(-5px);
+         transition: all 0.3s ease-in-out;
+         }
+      </style>
+   </head>
+   <body>
+      <!-- title -->
+      <div class="container head">
+         <div class="row">
+            <div class="col-md-7">
+               <img src="images/logo_futurenow.png" alt="logo" class="logo">
+            </div>
+         </div>
+      </div>
+      <!--countdown-->
+      <div class="count-time">
+         <h1 class="headertext">We are Coming soon!!!!</h1>
+         <h1 class="subtext">Stay tuned for something amazing</h1>
+         <div class="examples">
+            <div class="simply-countdown-losange" id="simply-countdown-losange" style="margin: 0 auto;"></div>
+         </div>
+         <div class="clearfix"></div>
+      </div>
+      <!--//countdown-->
+      <!-- Our Services Section -->
+      <section class="services py-5">
+         <div class="container text-center">
+            <h1 class="mb-4 headertext" style="color:#fff;">Our Services</h1>
+            <div class="row">
+               <!-- Service 1 -->
+               <div class="col-md-4 mb-4">
+                  <div class="card h-100 shadow border-0 p-4">
+                     <i class="fa fa-code fa-3x mb-3 text-primary"></i>
+                     <h4 class="font-weight-bold">Software Training</h4>
+                     <p>Hands-on training in Java, Python, Web Dev, and more with real-time projects.</p>
+                  </div>
+               </div>
+               <!-- Service 2 -->
+               <div class="col-md-4 mb-4">
+                  <div class="card h-100 shadow border-0 p-4">
+                     <i class="fa fa-briefcase fa-3x mb-3 text-success"></i>
+                     <h4 class="font-weight-bold">Placement Assistance</h4>
+                     <p>We help students with resume building, mock interviews, and job referrals.</p>
+                  </div>
+               </div>
+               <!-- Service 3 -->
+               <div class="col-md-4 mb-4">
+                  <div class="card h-100 shadow border-0 p-4">
+                     <i class="fa fa-graduation-cap fa-3x mb-3 text-warning"></i>
+                     <h4 class="font-weight-bold">Career Counseling</h4>
+                     <p>Guidance for choosing the right career path in the tech industry.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- content -->
+      <div class="sub-main-w3">
+         <form class="login" action="#" method="post">
+            <p class="legend">Enquire Now <span class="fa fa-hand-o-down"></span></p>
+            <!-- Name -->
+            <div class="input">
+               <input type="text" placeholder="Name" name="name" required />
+               <span class="fa fa-user"></span>
+            </div>
+            <!-- Email -->
+            <div class="input">
+               <input type="email" placeholder="Email" name="email" required />
+               <span class="fa fa-envelope"></span>
+            </div>
+            <!-- Phone -->
+            <div class="input">
+               <input type="tel" placeholder="Phone Number" name="phone" required pattern="[0-9]{10}" />
+               <span class="fa fa-phone"></span>
+            </div>
+            <!-- Submit -->
+            <button type="submit" class="submit">
+            <span class="fa fa-paper-plane"></span>
+            </button>
+         </form>
+      </div>
+      <!-- //content -->
+      <!-- copyright -->
+      <div class="footer">
+         <h2>&copy; 2025 Future Now Ahead OPC Pvt Ltd.</h2>
+      </div>
+      <!-- //copyright -->
+      <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+      <script src="js/simplyCountdown.js"></script>
+      <script>
+         var d = new Date();
+           d.setDate(d.getDate() + 10);
+         
+           // default example
+           simplyCountdown('.simply-countdown-one', {
+               year: d.getFullYear(),
+               month: d.getMonth() + 1,
+               day: d.getDate()
+           });
+         
+           // inline example
+           simplyCountdown('.simply-countdown-inline', {
+               year: d.getFullYear(),
+               month: d.getMonth() + 1,
+               day: d.getDate(),
+               inline: true
+           });
+         
+           //jQuery example
+           $('#simply-countdown-losange').simplyCountdown({
+               year: d.getFullYear(),
+               month: d.getMonth() + 1,
+               day: d.getDate(),
+               enableUtc: false
+           });
+      </script>
+   </body>
+</html>
