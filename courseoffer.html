@@ -218,11 +218,13 @@
 
     <section id="form" class="bg-blue-50 p-8 rounded-xl shadow">
       <h2 style="color: white!important;" class="text-2xl font-bold mb-4 text-center">Request a Call Back</h2>
-      <form class="grid gap-4 max-w-xl mx-auto">
+      <form action="https://formspree.io/f/xyzjarvl" method="POST" id="enquiryForm" class="grid gap-4 max-w-xl mx-auto">
         <input type="text" placeholder="Full Name" class="p-3 border rounded">
         <input type="email" placeholder="Email Address" class="p-3 border rounded">
         <input type="tel" placeholder="Phone Number" class="p-3 border rounded">
         <textarea rows="4" placeholder="Interested Course(s)" class="p-3 border rounded"></textarea>
+           <input type="text" name="_gotcha" style="display:none">
+              <input type="hidden" name="_redirect" value="https://futurenowahead.github.io/thank-you.html">
         <button type="submit" class="bg-blue-600 py-3 px-6 rounded hover:bg-blue-700">Submit</button>
       </form>
     </section>
@@ -235,4 +237,5 @@
   <script>feather.replace();</script>
 </body>
 </html>
+
 
